@@ -1,7 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { GetComponent } from './get/get.component';
+import { PostComponent } from './post/post.component';
+import { PutComponent } from './put/put.component';
+import { DeleteComponent } from './delete/delete.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path : 'get',component:GetComponent},
+  {path:'post', component:PostComponent},
+  {path:'put',component:PutComponent},
+  {path:'delete',component:DeleteComponent},
+
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
